@@ -1,0 +1,78 @@
+<html>
+<head>
+<script src="booking.js"> </script>
+
+</head>
+<body>
+	<h1 align="center">Ticket Booking </h1>
+	<h3>Book your ticket in my THETOR </h3>
+
+	<table border="1" align="center" style="width:50%">
+	<tr><th><h4>SILVER</h4></th></tr>
+		<tr>
+		   <td><input type = "checkbox" value="A1" id="A1" onClick="book('SILVER','A1')">A1</td>
+		   <td><input type = "checkbox" value="A2" id="A2" onClick="book('SILVER','A2')">A2</td>
+		   <td><input type = "checkbox" value="A3" id="A3" onClick="book('SILVER','A3')">A3</td>
+		   <td><input type = "checkbox" value="A4" id="A4" onClick="book('SILVER','A4')">A4</td>
+		   <td><input type = "checkbox" value="A5" id="A5" onClick="book('SILVER','A5')">A5</td>
+		   <td><input type = "checkbox" value="A6" id="A6" onClick="book('SILVER','A6')">A6</td>
+		</tr>
+		<tr>
+		   <td><input type = "checkbox" value="B1" id="B1" onClick="book('SILVER','B1')">B1</td>
+		   <td><input type = "checkbox" value="B2" id="B2" onClick="book('SILVER','B2')">B2</td>
+		   <td><input type = "checkbox" value="B3" id="B3" onClick="book('SILVER','B3')">B3</td>
+		   <td><input type = "checkbox" value="B4" id="B4" onClick="book('SILVER','B4')">B4</td>
+		   <td><input type = "checkbox" value="B5" id="B5" onClick="book('SILVER','B5')">B5</td>
+		   <td><input type = "checkbox" value="B6" id="B6" onClick="book('SILVER','B6')">B6</td>	
+		</tr>
+	<tr><th><h4>Gold</h4></th></tr>
+		<tr>
+		   <td><input type = "checkbox" value="C1" id="C1" onClick="book('GOLD','C1')">C1</td>
+		   <td><input type = "checkbox" value="C2" id="C2" onClick="book('GOLD','C2')">C2</td>
+		   <td><input type = "checkbox" value="C3" id="C3" onClick="book('GOLD','C3')">C3</td>
+		   <td><input type = "checkbox" value="C4" id="C4" onClick="book('GOLD','C4')">C4</td>
+		   <td><input type = "checkbox" value="C5" id="C5" onClick="book('GOLD','C5')">C5</td>
+		   <td><input type = "checkbox" value="C6" id="C6" onClick="book('GOLD','C6')">C6</td>
+		</tr>
+		<tr>
+		   <td><input type = "checkbox" value="D1" id="D1" onClick="book('GOLD','D1')">D1</td>
+		   <td><input type = "checkbox" value="D2" id="D2" onClick="book('GOLD','D2')">D2</td>
+		   <td><input type = "checkbox" value="D3" id="D3" onClick="book('GOLD','D3')">D3</td>
+		   <td><input type = "checkbox" value="D4" id="D4" onClick="book('GOLD','D4')">D4</td>
+		   <td><input type = "checkbox" value="D5" id="D5" onClick="book('GOLD','D5')">D5</td>
+		   <td><input type = "checkbox" value="D6" id="D6" onClick="book('GOLD','D6')">D6</td>
+		</tr>	
+	<tr><th><h4>PLATINUM</h4></th></tr>	
+		<tr>
+		   <td><input type = "checkbox" value="E1" id="E1" onClick="book('PLATINUM','E6')">E1</td>
+		   <td><input type = "checkbox" value="E2" id="E2" onClick="book('PLATINUM','E6')">E2</td>
+		   <td><input type = "checkbox" value="E3" id="E3" onClick="book('PLATINUM','E6')">E3</td>
+		   <td><input type = "checkbox" value="E4" id="E4" onClick="book('PLATINUM','E6')">E4</td>
+		   <td><input type = "checkbox" value="E5" id="E5" onClick="book('PLATINUM','E6')">E5</td>
+		   <td><input type = "checkbox" value="E6" id="E6" onClick="book('PLATINUM','E6')">E6</td>
+		</tr>	
+	<tr><th><h4>RECLYNER</h4></th></tr>
+		<tr>
+		   <td><input type = "checkbox" value="F1" id="F1" onClick="book('RECLANER','F6')">F1</td>
+		   <td><input type = "checkbox" value="F2" id="F2" onClick="book('RECLANER','F6')">F2</td>
+		   <td><input type = "checkbox" value="F3" id="F3" onClick="book('RECLANER','F6')">F3</td>
+		   <td><input type = "checkbox" value="F4" id="F4" onClick="book('RECLANER','F6')">F4</td>
+		   <td><input type = "checkbox" value="F5" id="F5" onClick="book('RECLANER','F6')">F5</td>
+		   <td><input type = "checkbox" value="F6" id="F6" onClick="book('RECLANER','F6')">F6</td>
+		</tr>	
+	</table>
+
+<button onClick="bill()" align="center"><h3>BILL</h3></button>
+
+<table border="1">
+	<tr>
+		<th> CATEGARY</th>
+		<th> SEAT QUANTITY</th>		
+		<th> SEAT NUMBERS</th>
+		<th> Price</th>			
+
+	</tr>
+<tbody id="tbody"></tbody>
+</table>
+</body>
+
